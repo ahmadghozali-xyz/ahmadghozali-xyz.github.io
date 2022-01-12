@@ -214,12 +214,12 @@
               </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="font">Select Font:</label>
+                  <label for="font">Pilih Font:</label>
                   <select class="form-control" id="font"
                     onchange="localStorage.setItem('fontIndex', this.value);setup()"></select>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="font">Select Book:</label>
+                  <label for="font">Pilih Kertas:</label>
                   <select class="form-control" id="book"
                     onchange="localStorage.setItem('bookIndex', this.value);setup()"></select>
                 </div>
@@ -231,20 +231,11 @@
                 </div>
                 <div class="form-group col-md-6">
                   <label for="name">Nama</label>
-			<input type="text" class="form-control" id="name" oninput="txtName = this.value" placeholder="Nama : Satset.id">
+                  <input type="text" class="form-control" id="name" oninput="txtName = this.value">
                 </div>
-		      <div class="form-row">
-			<div class="form-group col-md-12">
-			<label for="name">Fakultas</label>
-			<input type="text" class="form-control" id="fakultas" oninput="txtFakultas = this.value" placeholder="Fakultas : Teknik Informatika">
-				</div>
-		      <div class="form-group col-md-6">
-			<label for="name">Kelas / NIM</label>
-			<input type="text" class="form-control" id="kelas" oninput="txtKelas = this.value" placeholder="Kelas : XII IPA 1">
-			</div>
               </div>
               <div class="form-group">
-                <label for="comment">Comment:</label>
+                <label for="comment">Masukkan Text:</label>
                 <textarea class="form-control" id="content" rows="10" oninput="txtContent = this.value"></textarea>
               </div>
 
@@ -253,7 +244,7 @@
             <div class="form-group">
 
               <button class="main-button"
-                onclick="downloadCanvas(document.getElementById('defaultCanvas0'), 'hasil.png')">Download</button>
+                onclick="downloadCanvas(document.getElementById('defaultCanvas0'), 'BotNulis.png')">Download</button>
             </div>
           </div>
         </div>
